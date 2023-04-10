@@ -4,8 +4,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 
 function RoomPage2() {
   return (
-    <div>
-        <div className="flex" >
+    <div className="bg-black" >
+        <div className="md:flex" >
             <div>
             <Carousel
         autoPlay
@@ -28,14 +28,24 @@ function RoomPage2() {
       </Carousel>
             </div>
 
-     <div className="w-full md:w-6/12 px-3 p-20 lg:px-6 mb-6 md:mb-0 basis-auto grow-0 shrink-0 ">
-          <h2 className="text-3xl text-black p-5 text-center font-bold ">Contact us</h2>
-          <p className="text-black text-[20px] font-bold items-center ">
+     <div className="w-full md:w-6/12 text-white px-3 p-20 lg:px-6 mb-6 md:mb-0 basis-auto grow-0 shrink-0 ">
+          <h2 className="text-3xl p-5  font-bold ">Contact us</h2>
+          <div  className=" font-bold p-5 " >
+            <p>we are the best in town</p>
+            <p>we are the best in town</p>
+            <p>we are the best in town</p>
+          </div>
+          <div> 
+           <p className=" text-[20px] p-5 font-bold items-center ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Laudantium, modi accusantium ipsum corporis quia asperiores
             dolorem nisi corrupti eveniet dolores ad maiores repellendus enim
             autem omnis fugiat perspiciatis? Ad, veritatis.
           </p>
+        </div>
+        <div className="p-5" >
+          <p className="font-bold text-[40px] text-yellow-400 "  >$100.00</p>
+        </div>
         
      </div>
         </div>
