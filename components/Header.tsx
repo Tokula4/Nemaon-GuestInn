@@ -9,11 +9,11 @@ import { useState } from 'react';
  export function Header() {
 
   let Links =[
-    {name:"HOME",link:"/"},
+    {name:"HOME",link:"/Homepage"},
     {name:"SERVICE",link:"/"},
     {name:"ABOUT",link:"/"},
     {name:"BLOG'S",link:"/"},
-    {name:"CONTACT",link:"/"},
+    {name:"CONTACT",link:"/Contactpage"},
   ];
   let [open,setOpen]= useState(false);
 
