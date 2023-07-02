@@ -1,67 +1,95 @@
 
+
+import Link from 'next/link';
 import { useState } from 'react';
-
-
+import Servicepage from './Servicepage';
 
 
 
 
  export function Header() {
 
-  let Links =[
-    {name:"HOME",link:"/Homepage"},
-    {name:"SERVICE",link:"/"},
-    {name:"ABOUT",link:"/"},
-    {name:"BLOG'S",link:"/"},
-    {name:"CONTACT",link:"/Contactpage"},
-  ];
-  let [open,setOpen]= useState(false);
+  const [navbar, setNavbar] = useState(false);
+
+ 
 
   return (
 
-    <div className='shadow-md w-full fixed top-0 left-0'>
-    <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-    <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-    text-gray-800'>
-      <span className='text-3xl text-indigo-600 mr-1 pt-2'>
-    
-      </span>
-      Nemon Guest Inn
-    </div>
-    
-    <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
-      
-      
-      <div className={open ? 'close':'menu'}  >
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
-</svg></div> 
-      
-      
-    </div>
-
-    <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] 
-    left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-10 ':'top-[-490px]'}`}>
-      {
-        Links.map((link)=>(
-          <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-            <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
-          </li>
-        ))
-      }
-      <div className='md:hidden' >
-      <button type="submit"  className="cursor-pointer items-center justify-center overflow-hidden rounded bg-yellow-400  shadow-lg shadow-yellow-500/50  mx-4 px-8 py-3
-             font-bold text-white text-[20px] transition-all duration-300 focus:outline-none p-4" > Contact Us</button>
+<nav className="w-full shadow">
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+          <div>
+            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+              <a href="#">
+                <h2 className="text-2xl font-bold ">Nemon Guest</h2>
+              </a>
+              <div className="md:hidden">
+                <button
+                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  onClick={() => setNavbar(!navbar)}
+                >
+                  {navbar ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-black"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-black"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                navbar ? 'block' : 'hidden'
+              }`}
+            >
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                <li className="text-black">
+                  <Link href='/'> Home</Link>
+                </li>
+                <li className="text-black">
+                  <a href='components/Servicepage'>Service
+                    
+                  </a>
+                </li>
+                <li className="text-black">
+                  <Link href="/about">About
+               
+                  </Link>
+                </li>
+                <li className="text-black">
+                  <Link href="/contact">Contact
+                  
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      
-    </ul>
-
-    <div className=' hidden ' >
-    <button type="submit"  className="cursor-pointer items-center justify-center overflow-hidden rounded bg-yellow-400  shadow-lg shadow-yellow-500/50  mx-4 px-8 py-3
-             font-bold text-white text-[20px] transition-all duration-300 focus:outline-none p-4" > Contact Us</button>
-    </div>
-    </div>
-  </div>
+      </nav>
   
   );
     }

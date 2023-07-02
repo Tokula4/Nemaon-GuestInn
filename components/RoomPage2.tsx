@@ -16,14 +16,14 @@ function RoomPage2() {
         interval={5000}
       >
         <div>
-          <img loading="lazy" src="/img/banner.jpg" />
+          <img loading="lazy" src="/img/room-1.jpg" />
           
         </div>
         <div>
-          <img loading="lazy" src="/img/banner-1.jpg" />
+          <img loading="lazy" src="/img/meeting-1.jpg" />
         </div>
         <div>
-          <img loading="lazy" src="/img/banner-3.jpg" />
+          <img loading="lazy" src="/img/outside-1.jpg" />
         </div>
       </Carousel>
             </div>
