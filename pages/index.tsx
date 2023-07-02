@@ -1,7 +1,9 @@
 
 import Head from 'next/head';
 import Banner from '../components/Banner';
+import ContactForm from '../components/ContactForm';
 import Contactpage from '../components/Contactpage';
+
 import { Header } from '../components/Header';
 import Homepage from '../components/Homepage';
 import Roompage from '../components/Roompage';
@@ -17,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="bg-[url(/img/bg.jpg)] bg-cover h-screen" >
+      <div className="bg-[url(/img/bg-img.jpg)] bg-cover  h-screen" >
      
    <Homepage/>
       </div>
@@ -31,12 +33,11 @@ export default function Home() {
       </main>
       <div   className="mx-auto  max-w-screen-2xl" >
       <RoomPage2/>
+       <ContactForm/>
       </div>
-      <div   className="bg-black">
-   
-      <Contactpage/>
-
-      </div>
+      
+      
+     
   
 
     </div>
