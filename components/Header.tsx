@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import Servicepage from './Servicepage';
+
 
 
 
@@ -81,7 +81,13 @@ import Servicepage from './Servicepage';
                   </Link>
                 </li>
                 <li className="text-black">
-                  <Link href="/contact">Contact
+                  <Link href="/contactpage">Contact
+                  
+                  </Link>
+                </li>
+
+                <li className="text-black">
+                  <Link href="/roomspage">Rooms
                   
                   </Link>
                 </li>

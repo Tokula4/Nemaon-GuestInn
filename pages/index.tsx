@@ -6,9 +6,13 @@ import Contactpage from '../components/Contactpage';
 
 import { Header } from '../components/Header';
 import Homepage from '../components/Homepage';
-import Roompage from '../components/Roompage';
+import Roompage from '../components/Servicespage1';
 import RoomPage2 from '../components/RoomPage2';
-import Servicepage from '../components/Servicepage';
+import Servicespage1 from '../components/Servicespage1';
+import Nemonvideopage from '../components/Nemonvideopage';
+import Footerpage from '../components/Footerpage';
+import Theteam from '../components/Theteam';
+
 
 export default function Home() {
   return (
@@ -27,14 +31,17 @@ export default function Home() {
   
 
       <main className="mx-auto max-w-screen-2xl">
-      <Roompage/>
+      <Servicespage1/>
     
      
       </main>
       <div   className="mx-auto  max-w-screen-2xl" >
-      <RoomPage2/>
-       <ContactForm/>
+      <Nemonvideopage/>
+      <Theteam/>
+       
       </div>
+
+      <Footerpage/>
       
       
      

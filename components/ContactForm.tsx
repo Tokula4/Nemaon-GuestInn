@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { useForm, SubmitHandler } from "react-hook-form";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 
 type Inputs = {
  name : string,
@@ -18,7 +20,9 @@ function ContactMe() {
     }
   return (
 
-    <div className="container p-3 px-6 mx-auto my-24 bg-black" >
+    <section>
+
+<div className="container p-3 px-6 mx-auto my-24 bg-black" >
     <section className="p-2 mb-32 text-white-800" >
       
       <div className="flex flex-wrap" >
@@ -67,6 +71,34 @@ function ContactMe() {
       </div>
     </section>
     </div>
+
+<div className="relative">
+      <div className="absolute max-w-5xl bottom-0 z-20 w-100 h-10 bg-gradient-to-t from-gray-100 to-transparent" />
+      <Carousel
+        autoPlay
+        infiniteLoop
+        showStatus={false}
+        showIndicators={false}
+        showThumbs={false}
+        interval={5000}
+      >
+        <div>
+          <img loading="lazy" src="/img/staff.jpg" />
+        </div>
+        <div>
+          <img loading="lazy" src="/img/room-2.jpg" />
+        </div>
+        <div>
+          <img loading="lazy" src="/img/outside-1.jpg" />
+        </div>
+      </Carousel>
+    </div>
+
+
+
+ 
+
+    </section>
   )
 }
 
