@@ -12,7 +12,7 @@ type Inputs = {
 };
 
 
-function ContactMe() {
+function ContactForm() {
     const { register, 
          handleSubmit,  } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = (formData) => {
@@ -29,14 +29,20 @@ function ContactMe() {
       <div className="w-full px-3 mb-6 grow-0 shrink-0 basis-auto md:mb-0 md:w-6/12 lg:px-6">
           <h2 className="mb-6 text-3xl font-bold text-white">Contact us</h2>
           <p className="mb-6 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Laudantium, modi accusantium ipsum corporis quia asperiores
-            dolorem nisi corrupti eveniet dolores ad maiores repellendus enim
-            autem omnis fugiat perspiciatis? Ad, veritatis.
+          Nemon Guest Inn, klm 12, Abuja--Keffi Highway Mararaba--Nasarawa state.
+Services are Lodging/Accomodations and Catering Services.
+
+       
+          We assure you the best for your investment in Nemon
           </p>
           <p className="mb-2 text-white">New York, 94126, United States</p>
-          <p className="mb-2 text-white">+ 01 234 567 89</p>
-          <p className="mb-2 text-white">info@gmail.com</p>
+          <p className="mb-2 text-white">
+          For booking & Reservation please call <br></br>--09131752092
+          <br></br>Uboho --08063449649
+          <br></br>Rebecca-08168606970
+          <br></br>Benson--08065684585
+          </p>
+          <p className="mb-2 text-white">nemonguestin@gmail.com</p>
         </div>
        
        <div  className="w-full px-3 mb-12 grow-0 shrink-0 basis-auto md:mb-0 md:w-6/12 lg:px-6" >
@@ -73,7 +79,7 @@ function ContactMe() {
     </div>
 
 <div className="relative">
-      <div className="absolute max-w-5xl bottom-0 z-20 w-100 h-10 bg-gradient-to-t from-gray-100 to-transparent" />
+      <div className="absolute bottom-0 z-20 h-10 max-w-5xl w-100 bg-gradient-to-t from-gray-100 to-transparent" />
       <Carousel
         autoPlay
         infiniteLoop
@@ -102,4 +108,4 @@ function ContactMe() {
   )
 }
 
-export default ContactMe
+export default ContactForm

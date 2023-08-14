@@ -15,12 +15,12 @@ import { useState } from 'react';
 
   return (
 
-<nav className="w-full shadow">
+<nav className="w-full bg-gray-900 bg-opacity-50">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <a href="#">
-                <h2 className="text-2xl font-bold ">Nemon Guest</h2>
+                <h2 className="text-2xl text-white font-bold ">Nemon Guest</h2>
               </a>
               <div className="md:hidden">
                 <button
@@ -30,7 +30,7 @@ import { useState } from 'react';
                   {navbar ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-black"
+                      className="w-6 h-6 text-white"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -43,7 +43,7 @@ import { useState } from 'react';
                   ) : (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-black"
+                      className="w-6 h-6 text-white"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -67,26 +67,26 @@ import { useState } from 'react';
               }`}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="text-black">
+                <li className="text-white">
                   <Link href='/'> Home</Link>
                 </li>
-                <li className="text-black">
+                <li className="text-white">
                   <a href='components/Servicepage'>Service
                     
                   </a>
                 </li>
-                <li className="text-black">
+                <li className="text-white">
                   <Link href="/about">About
                
                   </Link>
                 </li>
-                <li className="text-black">
+                <li className="text-white">
                   <Link href="/contactpage">Contact
                   
                   </Link>
                 </li>
 
-                <li className="text-black">
+                <li className="text-white">
                   <Link href="/roomspage">Rooms
                   
                   </Link>
