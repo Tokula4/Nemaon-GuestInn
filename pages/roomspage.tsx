@@ -5,7 +5,7 @@ import { Header } from '../components/Header'
 function roomspage() {
   return (
     <div>
-        <Header/>
+      
         <Roompage/>
       
     </div>

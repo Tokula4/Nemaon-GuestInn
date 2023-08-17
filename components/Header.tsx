@@ -71,17 +71,17 @@ import { useState } from 'react';
                   <Link href='/'> Home</Link>
                 </li>
                 <li className="text-white">
-                  <a href='components/Servicepage'>Service
+                  <a href='#ServicePage'>Service
                     
                   </a>
                 </li>
                 <li className="text-white">
-                  <Link href="/about">About
+                  <Link href="#About">About
                
                   </Link>
                 </li>
                 <li className="text-white">
-                  <Link href="/contactpage">Contact
+                  <Link href="#Contactpage">Contact
                   
                   </Link>
                 </li>

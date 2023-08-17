@@ -2,7 +2,7 @@ import React from 'react'
 
 function ServicePage() {
   return (
-    <div className="container mx-auto px-6 py-3 " >
+    <div id="ServicePage" className="container mx-auto px-6 py-3 " >
             <div className="md:flex mx-auto  mt-8 md:-mx-4">
                 <div className="w-full h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2">
                     <div className="bg-gray-900 bg-opacity-50 flex items-center h-full">

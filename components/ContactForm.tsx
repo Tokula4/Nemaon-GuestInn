@@ -20,7 +20,7 @@ function ContactForm() {
     }
   return (
 
-    <section>
+    <section id="Contactpage" >
 
 <div className="container p-3 px-6 mx-auto my-24 bg-black" >
     <section className="p-2 mb-32 text-white-800" >

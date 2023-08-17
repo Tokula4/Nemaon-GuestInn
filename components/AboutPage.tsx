@@ -4,7 +4,7 @@ import React from 'react'
 function AboutPage() {
   return (
     <div>
-      <section className=" bg-gray-50 px-4 pb-20 pt-4">
+      <section id="About" className=" bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
       
           <div className="mt-32 flex flex-wrap items-center">
