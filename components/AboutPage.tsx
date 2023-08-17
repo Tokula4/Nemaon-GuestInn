@@ -3,7 +3,7 @@ import React from 'react'
 
 function AboutPage() {
   return (
-    <div>
+    <div  className="" >
       <section id="About" className=" bg-gray-50 px-4 pb-20 pt-4">
         <div className="container mx-auto">
       
@@ -34,12 +34,12 @@ function AboutPage() {
                             <svg className="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </button>
             </div>
-            <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
+            <div className="mx-auto mt-24 flex w-full  justify-center px-4 md:w-4/12 lg:mt-0">
               <div className="shadow-lg shadow-gray-500/10">
                 <div className=" bg-gray-900 bg-opacity-50 relative h-56">
                   <img
                     alt="Card Image"
-                    src="/img/teamwork.jpeg"
+                    src="/img/building-1.jpg"
                     className="h-full w-full"
                   />
                 </div>

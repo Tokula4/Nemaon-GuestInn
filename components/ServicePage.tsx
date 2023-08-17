@@ -4,7 +4,7 @@ function ServicePage() {
   return (
     <div id="ServicePage" className="container mx-auto px-6 py-3 " >
             <div className="md:flex mx-auto  mt-8 md:-mx-4">
-                <div className="w-full h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2">
+                <div className="w-full  bg-[url('/img/banner.jpg')] h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2">
                     <div className="bg-gray-900 bg-opacity-50 flex items-center h-full">
                         <div className="px-10 max-w-xl">
                             <h2 className="text-2xl text-white font-semibold">Accomodation</h2>
@@ -18,7 +18,7 @@ function ServicePage() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2">
+                <div className="w-full  bg-[url('/img/dish-1.png')] h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2">
                     <div className="bg-gray-900 bg-opacity-50 flex items-center h-full">
                         <div className="px-10 max-w-xl">
                             <h2 className="text-2xl text-white font-semibold">Catering Service </h2>

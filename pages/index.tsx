@@ -5,6 +5,7 @@ import Homepage from '../components/Homepage';
 import AboutPage from '../components/AboutPage';
 import ServicePage from '../components/ServicePage';
 import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      
-      <div className="  overflow-hidden bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')]" >
+      <div className="  overflow-hidden bg-cover bg-center bg-[url('/img/banner-3.jpg')]" >
       <Header />
    <Homepage/>
 
@@ -24,6 +25,7 @@ export default function Home() {
       <ServicePage/>
       <AboutPage/>
       <ContactForm/>
+      <Footer/>
       
   
 
