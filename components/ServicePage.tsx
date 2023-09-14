@@ -12,7 +12,7 @@ function ServicePage() {
                             <p className="mt-2 text-white">Accomodation facilities/class are ; 
                             Royal,Executive & Standard Rooms.Rates between #4000 to #80000. Check out time is Noon.
 </p>
-                            <button href="/roomspage" className="flex items-center mt-4 text-sm font-medium text-white uppercase rounded hover:underline focus:outline-none">
+                            <button  className="flex items-center mt-4 text-sm font-medium text-white uppercase rounded hover:underline focus:outline-none">
                                 <span>More Info</span>
                                 <svg className="w-5 h-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
 
