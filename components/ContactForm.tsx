@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Carousel } from 'react-responsive-carousel';
@@ -22,28 +23,14 @@ function ContactForm() {
 
     <section id="Contactpage" >
 
-<div className="container p-3 px-6 mx-auto my-24 bg-black" >
+<div className="container p-3 px-6 mx-auto my-24 " >
     <section className="p-2 mb-32 text-white-800" >
       
-      <div className="flex flex-wrap" >
-      <div className="w-full px-3 mb-6 grow-0 shrink-0 basis-auto md:mb-0 md:w-6/12 lg:px-6">
-          <h2 className="mb-6 text-3xl font-bold text-white">Contact us</h2>
-          <p className="mb-6 text-white">
-          Nemon Guest Inn, klm 12, Abuja--Keffi Highway Mararaba--Nasarawa state.
-Services are Lodging/Accomodations and Catering Services.
-
-       
-          We assure you the best for your investment in Nemon
-          </p>
-          <p className="mb-2 text-white">New York, 94126, United States</p>
-          <p className="mb-2 text-white">
-          For booking & Reservation please call <br></br>--09131752092
-          <br></br>Uboho --08063449649
-          <br></br>Rebecca-08168606970
-          <br></br>Benson--08065684585
-          </p>
-          <p className="mb-2 text-white">nemonguestin@gmail.com</p>
+      <div className="flex flex-wrap mx-auto mt-8 md:-mx-4" >
+        <div>
+          <Image  width={500} height={500}  src="/img/contact.png" />
         </div>
+  
        
        <div  className="w-full px-3 mb-12 grow-0 shrink-0 basis-auto md:mb-0 md:w-6/12 lg:px-6" >
         
@@ -70,7 +57,7 @@ Services are Lodging/Accomodations and Catering Services.
            </div>
 
               
-               <button className=" bg-[#F7AB0A]  hover:bg-[#ce9720] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" >Submit</button>              
+               <button className=" bg-[#1b8d50]  hover:bg-[#1b8d50] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" >Submit</button>              
         </form>
         </div>
         
@@ -78,27 +65,7 @@ Services are Lodging/Accomodations and Catering Services.
     </section>
     </div>
 
-<div className="relative">
-      <div className="absolute bottom-0 z-20 h-10 max-w-5xl w-100 bg-gradient-to-t from-gray-100 to-transparent" />
-      <Carousel
-        autoPlay
-        infiniteLoop
-        showStatus={false}
-        showIndicators={false}
-        showThumbs={false}
-        interval={5000}
-      >
-        <div>
-          <img loading="lazy" src="/img/staff.jpg" />
-        </div>
-        <div>
-          <img loading="lazy" src="/img/room-2.jpg" />
-        </div>
-        <div>
-          <img loading="lazy" src="/img/outside-1.jpg" />
-        </div>
-      </Carousel>
-    </div>
+
 
 
 

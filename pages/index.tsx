@@ -6,6 +6,7 @@ import AboutPage from '../components/AboutPage';
 import ServicePage from '../components/ServicePage';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+import Slider from '../components/Slider';
 
 
 export default function Home() {
@@ -17,12 +18,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      
-      <div className="  overflow-hidden bg-cover bg-center bg-[url('/img/banner-3.jpg')]" >
+      <div className="  overflow-hidden bg-cover bg-center bg-[url('/img/home-bg.png')]" >
       <Header />
    <Homepage/>
 
       </div>
       <ServicePage/>
+     
       <AboutPage/>
       <ContactForm/>
       <Footer/>
