@@ -28,7 +28,7 @@ function ContactForm() {
       
       <div className="flex flex-wrap mx-auto mt-8 md:-mx-4" >
         <div>
-          <Image  width={500} height={500}  src="/img/contact.png" />
+          <img  width={500} height={500}  src="/img/contact.png" />
         </div>
   
        
